@@ -1,2 +1,0 @@
-# cocoflavor
-My portfolio repository
