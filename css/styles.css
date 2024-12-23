@@ -1,0 +1,354 @@
+/* for basic styles */
+html {font-size: 16px;}
+body {font-family: "myriad-pro", Arial, Helvetica, hiragino-kaku-gothic-pron, sans-serif;}
+
+/** HEADER **/
+header {
+	margin: 0;
+	padding: 0;
+
+	/* border: 1px solid black; */
+}
+
+#header-nav {
+  background-color: #whitesmoke;
+  border-radius: 0;
+  border: 0;
+  position: relative;
+}
+.navbar-brand {
+  padding-top: 0;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  height: 80%;
+
+  /* position: absolute; */
+  /* left: 10%; */
+}
+.navbar-brand h1 { /* CocoFlavor logo */
+  color: darkgray;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+#nav-list { /* Entire dropdown menu */
+  margin-top: 0;
+  margin-bottom: 0;
+
+  /* position: absolute; */
+  /* right: 0; */
+  margin-right: 10px;
+  /* border: 1px solid teal; */
+}
+#nav-list a {
+  color: teal;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: tan;
+  opacity: 0.8;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1.5px solid tan;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -50px;
+}
+/* END HEADER */
+
+
+
+/* HOME PAGE */
+h2 {
+  font-size: 1.25rem;
+  text-align: center;
+  color: teal;
+  text-shadow: 2px 2px 5px silver;
+}
+
+#main-content {
+width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+
+  padding: 0;
+  
+  /* border: 1px solid silver; */
+}
+#wrapper {
+height: auto;
+width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 0;
+
+  /* border: 1px solid black; */
+}
+.row {
+width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  padding: 0;
+
+  /* border: 1px solid teal; */
+}
+.jumbotron {
+width: 100%;
+height: auto;
+  background-image: url('../images/jumbotron_asa_light.jpg');
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+
+  border: 1px solid tan;
+}
+.jumbotron h2 {
+  font-size: 1.5rem;
+  padding: 3px;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  /* border: 1px solid black; */
+}
+.jumbotron p {
+ 	font-size: 1.2rem;
+  	font-weight: 300;
+  	line-height: 1.7;
+  	text-align: left;
+  	color: dimgray;
+  	margin-bottom: 0;
+}
+.jumbotron p.short {
+	text-align: center;
+}
+section {
+	width: 80%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.sec {
+	width: auto;
+	height: 35px;
+	border-radius: 5px;
+	background-image: url("../images/jumbotron_seigaiha_light.jpg");
+	background-repeat: no-repeat;
+	overflow: auto;
+	position: relative;
+
+	border: 1px solid teal;
+}
+.sec h2 {
+	margin-top: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	/* border: 1px solid red; */
+}
+.sec h2:hover {
+	color: tan;
+}
+#works h2 {
+	color: tan;
+	text-shadow: none;
+}
+#works p {
+	color: white;
+}
+.category {
+  width: auto;
+  height: auto;
+
+  border: 1px solid teal;
+}
+
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+/* END HOME PAGE */
+
+
+/* ENGLISH PAGE */
+/* END ENGLISH PAGE */
+
+/* JAPANESE PAGE */
+p.text-jpn {
+	font-size: .9rem;
+	line-height: 2.1;
+}
+/* END JAPANESE PAGE */
+
+
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  /* HEADER */
+  .container {
+  	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+
+	padding: 0;
+	/* border: 1px solid red; */
+}
+.navbar-header {
+	position: relative;
+}
+.navbar-brand {
+  /* padding-top: 0; */
+  /* margin-top: 10px; */
+  /* margin-bottom: 0px; */
+  /* height: 80%; */
+
+	position: absolute;
+  	left: 50%;
+
+}
+.navbar-brand h1 {
+	margin-left: 125px;
+}
+#nav-list { /* Entire dropdown menu */
+  
+  margin-right: 125px;
+  position: absolute;
+  right: 0;
+  /* border: 1px solid teal; */
+}
+  /* END HEADER */
+
+  /* HOME PAGE */
+  /* .jumbotron p {
+ 	font-size: 1.1rem;
+ 	} */
+  #works {
+	width: 100%;
+	height: auto;
+	background-image: url("../images/lotus_1500.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: cover;
+}
+.item img {
+  width: 80%;
+  height: autto;
+}
+  /* END HOME PAGE */
+}
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* HEADER */
+  /* END HEADER */
+
+  /* HOME PAGE */
+  .jumbotron p {
+ 	font-size: 1.1rem;
+  }
+  #works {
+  	width: 100%;
+	height: auto;
+	background-image: url("../images/lotus_1250.jpg");
+  	background-repeat: no-repeat;
+  	background-position: left;
+  	background-size: cover;
+  }
+  /* END HOME PAGE */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* HEADER */
+  /* END HEADER */
+
+  /* HOME PAGE */
+  .jumbotron h2, .sec h2 {
+  	font-size: 1.25rem;
+  }
+  .jumbotron p {
+ 	font-size: 1rem;
+  }
+  #works {
+  	width: 100%;
+	height: auto;
+  	background-image: url("../images/lotus_20w10h.jpg");
+  	background-repeat: no-repeat;
+  	background-position: left;
+  	background-size: cover;
+  }
+  /* END HOME PAGE */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #collapsable-nav {
+    padding: 0;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text: Home, English, Japanese */
+    font-size: 1.2rem;
+    border-bottom: 1px solid white;
+  }
+  /* END HEADER */
+
+  /* HOME PAGE */
+  .jumbotron h2, .sec h2 {
+  	font-size: 1.2rem;
+  }
+  .jumbotron p {
+ 	font-size: .9rem;
+ 	margin-right: 25%;
+ 	margin-left: 25%;
+
+ 	/* border: 1px solid red; */
+  }
+  #works {
+  	width: 100%;
+	height: auto;
+  	background-image: url("../images/lotus_15w10h.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center;
+  	background-size: cover;
+  }
+  p.text-jpn {
+	font-size: .9rem;
+  }
+  /* END HOME PAGE */
+}
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* HEADER */
+  /* END HEADER */
+
+  /* HOME PAGE */
+  .jumbotron h2, .sec h2 {
+  	font-size: 1.1rem;
+  }
+
+  /* END HOME PAGE */
+}
